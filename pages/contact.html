@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen"/>
+    <title>Document</title>
+</head>
+<body>
+    
+  <header class="top-nav">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./entreprise.html">Entreprise</a></li>
+          <li><a href="./realisations.html">Réalisations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <input type="search" class="site-search" name="q" placeholder="rechercher"/>
+  </header>
+
+  <main>
+      <h1>BloomPetals</h1>
+      <h2>Nous Contacter</h2>
+      <form action="" method="post" enctype="multipart/form-data">
+          <fieldset>
+              <legend>Identité</legend>
+              <section>
+                <label for="civilite">Civilité: </label>
+                <select name="civilite" id="civilite">
+                  <option value="madame">Madame</option>
+                  <option value="monsieur">Monsieur</option>
+                </select>
+              </section>
+              <section>
+                <label for="nom">Nom: </label>
+                <input type="text" name="nom" id="nom" value="" maxlength="40">
+              </section>
+              <section>
+                <label for="prenom">Prénom: </label>
+                <input type="text" name="prenom" id="prenom" value="" maxlength="30">
+              </section>
+            </fieldset>
+            <fieldset>
+              <legend>Domicile</legend> 
+              <section>
+                <label for="adresse">Adresse: </label>
+                <input type="text" name="adresse" id="adresse" value="" maxlength="100">
+              </section>
+              <section>
+                <label for="complement">Complément d'adresse: </label>
+                <input type="text" name="complement" id="complement" value="" maxlength="100">
+              </section>
+              <section>
+                <label for="codep">Code postal: </label>
+                <input type="text" name="codep" id="codep" value="" size="5">
+              </section>
+              <section>
+                <label for="ville">Ville: </label>
+                <input type="text" name="ville" id="ville" value="" maxlength="30">
+              </section>
+              <section id="ChckBxConfi">
+                  <label for="check01">J'ai lu et approuve la <a href="http://">politique de confidentialité</a></label>
+                  <input type="checkbox" id="check01"></input>
+              </section>
+            </fieldset>
+          <!-- <section> -->
+          <button type="submit" name="modifier" id="modifier">Modifier</button>
+          <!-- </section> -->
+      </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
